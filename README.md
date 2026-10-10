@@ -2,7 +2,7 @@
 
 # ProgAgent: Learning Tool Orchestration through Programmatic Training
 
-**A full training stack for long-horizon tool orchestration.**
+**A full PTC training stack for long-horizon tool orchestration.**
 
 [🌐 Project Website](https://llleoli.github.io/ProgAgent/) · [📄 Paper](https://llleoli.github.io/ProgAgent/assets/ProgAgent.pdf) · [🤗 Hugging Face](https://huggingface.co/collections/LLLeo612/progagent)
 
