@@ -1,0 +1,7 @@
+You are auditing a portfolio of podcast series to identify those suffering from meaningful listener retention decline. The central concern is that some shows have experienced a drop-off in how many listeners stay through an entire episode, and leadership needs a prioritized list so the content team can focus revision efforts where they matter most.
+
+The audit methodology document and the configuration files stored alongside the data are the authoritative specification: they define how podcasts are flagged, how each of the audit metrics is computed, the thresholds and weights involved, the normalization bounds for the composite priority score, and how the segments most in need of revision are selected and formatted. Every number in your report must follow those definitions exactly — nothing beyond them should be assumed.
+
+Save the final deliverable as `priority_report.csv`. It must contain exactly these columns in this order: `podcast_name`, `genre`, `retention_drop_pct`, `priority_score`, `flagged_episode_count`, `top_revision_segments`, `demographic_shift_flag`. The `retention_drop_pct` and `priority_score` columns must each show exactly two decimal places. Rows must be sorted by `priority_score` in descending order, with ties broken by `retention_drop_pct` in descending order. The `flagged_episode_count` is the number of current-period episodes for that podcast.
+
+After saving the report, respond with a brief summary stating how many podcasts were flagged and listing the top entries by name, genre, retention drop percentage, and priority score.

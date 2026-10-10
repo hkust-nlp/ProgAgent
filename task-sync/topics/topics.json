@@ -1,0 +1,862 @@
+[
+  {
+    "TOPIC": "Dynamic route optimization for same-day deliveries cross-references real-time courier GPS locations, incoming order volumes, live traffic API data, vehicle capacity constraints, and customer delivery windows to generate an updated driver assignment manifest every 15 minutes.",
+    "TASK_FOLDER": "dynamic_same_day_route_optimization"
+  },
+  {
+    "TOPIC": "Failed delivery analysis cross-references historical delivery attempt logs, customer-provided access instructions, driver performance metrics, package dimensions/weight, and neighborhood security data to generate a prioritized re-routing list for high-value parcels with specific handling instructions.",
+    "TASK_FOLDER": "failed_delivery_analysis_rerouting"
+  },
+  {
+    "TOPIC": "Identify potentially fraudulent water damage claims by cross-referencing claimant policy details, historical weather data for the incident address, contractor repair estimates, and prior claims history to flag inconsistencies, outputting a prioritized investigation list.",
+    "TASK_FOLDER": "fraudulent_water_claim_detection"
+  },
+  {
+    "TOPIC": "Optimize independent adjuster assignment by analyzing incoming claim severity scores, adjuster specialty matrices, current caseload dashboards, and geographic territory maps to minimize average settlement time, generating a daily assignment schedule.",
+    "TASK_FOLDER": "adjuster_workload_optimization"
+  },
+  {
+    "TOPIC": "Verify organic certification compliance for a batch of avocados by cross-referencing farm pesticide application logs, soil test results, processor lot codes, and third-party audit certificates, outputting a compliance validation report for the retail buyer.",
+    "TASK_FOLDER": "organic_certification_verification"
+  },
+  {
+    "TOPIC": "Identify the source of post-harvest spoilage in leafy greens by analyzing temperature logs from refrigerated transport, warehouse humidity records, batch harvest timestamps, and quality inspection reports, producing a root-cause analysis with corrective action recommendations.",
+    "TASK_FOLDER": "spoilage_root_cause_analysis"
+  },
+  {
+    "TOPIC": "Optimize crude oil blending by analyzing real-time crude assay data, storage tank levels, pipeline delivery schedules, and product demand forecasts to generate a daily blending schedule that maximizes high-value product yield.",
+    "TASK_FOLDER": "crude_blend_optimization"
+  },
+  {
+    "TOPIC": "Identify underperforming catalytic cracking units by correlating catalyst activity logs, feedstock quality reports, unit throughput data, and energy consumption records to produce a maintenance priority list for catalyst regeneration or replacement.",
+    "TASK_FOLDER": "catalyst_performance_analysis"
+  },
+  {
+    "TOPIC": "Monitor franchisee adherence to national marketing promotions. Cross-reference point-of-sale transaction logs, digital coupon redemptions, local advertising spend reports, and brand guideline documents to identify non-compliant discounting or underfunded campaigns, outputting a corrective action list.",
+    "TASK_FOLDER": "marketing_promotion_adherence"
+  },
+  {
+    "TOPIC": "Audit franchisee inventory for unauthorized supplier usage. Cross-reference purchase order invoices, approved vendor lists, central distribution center shipment records, and product quality complaints to flag procurement violations, generating a supplier compliance report with evidence.",
+    "TASK_FOLDER": "unauthorized_supplier_audit"
+  },
+  {
+    "TOPIC": "Analyze consultant utilization and project profitability. Correlate timesheet entries, project budget allocations, individual skill matrices, and client billing rates to identify underutilized resources and over-servicing, generating a reallocation proposal with forecasted margin impact.",
+    "TASK_FOLDER": "consultant_utilization_profitability"
+  },
+  {
+    "TOPIC": "Flag tax-inefficient rebalancing actions by cross-referencing proposed trades with lot-level cost basis records, client tax status, jurisdictional wash sale rules, and year-to-date capital gain reports to output an optimized, tax-aware execution schedule.",
+    "TASK_FOLDER": "tax_aware_execution_schedule"
+  },
+  {
+    "TOPIC": "Validate timetable feasibility by analyzing proposed passenger schedules, track maintenance possession blocks, historical punctuality data for route sections, and junction capacity constraints to output a conflict report with prioritized rescheduling recommendations.",
+    "TASK_FOLDER": "timetable_conflict_analysis"
+  },
+  {
+    "TOPIC": "Prevent component stockouts by correlating real-time assembly line consumption data, supplier lead time forecasts, current warehouse inventory levels, and active production schedules to calculate shortage risks, outputting a prioritized purchase order list.",
+    "TASK_FOLDER": "component_shortage_prevention"
+  },
+  {
+    "TOPIC": "Identify erroneous roaming charges by correlating subscriber international roaming logs, partner carrier tariff agreements, real-time location data, and customer-reported dispute tickets, outputting a validated refund list with corrected billing line items.",
+    "TASK_FOLDER": "roaming_charge_validation"
+  },
+  {
+    "TOPIC": "Resolve billing discrepancies for bundled services by reconciling customer subscription plans, promotional discount eligibility logs, network usage records, and third-party content provider invoices, producing an adjustment report with root cause categorization.",
+    "TASK_FOLDER": "bundle_discount_reconciliation"
+  },
+  {
+    "TOPIC": "Flag high-risk rental applicants by cross-referencing credit score thresholds, national eviction database records, income-to-rent ratio calculations, and previous landlord reference patterns to generate a prioritized review queue with risk scores.",
+    "TASK_FOLDER": "applicant_risk_scoring"
+  },
+  {
+    "TOPIC": "Identify tenants for lease renewal incentives by analyzing payment history timeliness, maintenance request frequency, property damage incident logs, and local market rent comparables to produce a targeted outreach list with recommended offer terms.",
+    "TASK_FOLDER": "renewal_incentive_targeting"
+  },
+  {
+    "TOPIC": "Reconcile sponsored content delivery. Cross-reference advertiser insertion orders, platform impression logs, user demographic segments, and viewability verification reports to confirm contract fulfillment, generating a compliance certificate with shortfall details.",
+    "TASK_FOLDER": "reconcile_sponsored_content"
+  },
+  {
+    "TOPIC": "Optimize shift assignments by cross-referencing real-time machine maintenance logs, operator certification matrices, production line throughput targets, and historical absenteeism patterns to generate a daily staffing plan that minimizes downtime.",
+    "TASK_FOLDER": "shift_optimization_daily_plan"
+  },
+  {
+    "TOPIC": "Ensure labor law compliance by analyzing employee time-clock punches, union contract break rules, machine energy usage logs, and mandatory skill-refresher training schedules to produce a weekly shift report flagging potential violations.",
+    "TASK_FOLDER": "compliance_violation_report"
+  },
+  {
+    "TOPIC": "Outdated transitive dependencies create hidden risks. Cross-reference SBOM component lists, vulnerability database feeds, library release notes, and production deployment manifests to generate a prioritized patch schedule for high-severity vulnerabilities in indirect dependencies.",
+    "TASK_FOLDER": "transitive_dependency_patch_schedule"
+  },
+  {
+    "TOPIC": "License compliance failures can block product releases. Analyze software composition analysis reports, approved OSS license lists, dependency version histories, and legal exception tickets to produce an actionable report of components requiring license review or replacement.",
+    "TASK_FOLDER": "license_compliance_audit_report"
+  },
+  {
+    "TOPIC": "Assess small business loan applications by cross-referencing applicant bank transaction histories, industry-specific default rates, real-time collateral asset valuations, and existing lender exposure limits to generate a prioritized approval queue with risk-tiered credit limits.",
+    "TASK_FOLDER": "small_business_loan_risk_tiering"
+  },
+  {
+    "TOPIC": "Identify high-risk credit card accounts by analyzing transaction patterns for cash advances, recent credit bureau score changes, minimum payment history, and macroeconomic delinquency trends to produce a list for proactive credit limit reduction.",
+    "TASK_FOLDER": "credit_card_portfolio_monitoring"
+  },
+  {
+    "TOPIC": "Monitor delivery fleet adherence to customer site geofence policies. Correlate GPS location pings, customer contract service-level agreements, driver shift logs, and geofence violation incident reports to generate a weekly compliance scorecard per depot with flagged drivers for retraining.",
+    "TASK_FOLDER": "delivery_fleet_geofence_adherence"
+  },
+  {
+    "TOPIC": "Identify fuel theft or unauthorized vehicle usage by analyzing GPS movement against approved depot geofences, fuel card transaction locations, scheduled maintenance periods, and after-hours ignition events to produce an anomaly report with suspected incidents.",
+    "TASK_FOLDER": "unauthorized_usage_fuel_theft_detection"
+  },
+  {
+    "TOPIC": "Optimize perishable ingredient orders to reduce waste. Analyze daily sales data, current inventory levels from multiple stores, supplier delivery schedules, and weekly waste logs to generate a recommended purchase order for each location, minimizing overstock of short-shelf-life items.",
+    "TASK_FOLDER": "perishable_inventory_optimization"
+  },
+  {
+    "TOPIC": "Identify underperforming menu items for menu engineering. Cross-reference point-of-sales mix reports, ingredient cost data, kitchen prep time logs, and customer satisfaction scores to output a ranked list of candidates for removal or recipe revision.",
+    "TASK_FOLDER": "menu_item_performance_audit"
+  },
+  {
+    "TOPIC": "Identify travelers with high-risk itineraries prone to disruption. Correlate flight booking PNRs, real-time flight status feeds, historical on-time performance data, and alternative route availability to flag itineraries with tight connections or unreliable carriers, outputting a proactive rebooking list for customer service.",
+    "TASK_FOLDER": "high_risk_itinerary_identification"
+  },
+  {
+    "TOPIC": "Identify REC portfolios at risk of failing annual compliance obligations by analyzing certificate vintage dates, upcoming regulatory submission deadlines, historical purchase contracts, and real-time grid injection data to generate a prioritized procurement list.",
+    "TASK_FOLDER": "rec_compliance_gap_analysis"
+  },
+  {
+    "TOPIC": "Flag potentially fraudulent REC transactions by cross-referencing generator accreditation certificates, market trade timestamps, meter data validation reports, and buyer sustainability claims to output an anomaly report for regulatory investigation.",
+    "TASK_FOLDER": "rec_fraud_detection_audit"
+  },
+  {
+    "TOPIC": "Automatically route technical support tickets by parsing error codes from ticket descriptions, matching to product SKU from support portal logs, checking agent certification records, and analyzing current team queue depth to assign to the first available qualified engineer.",
+    "TASK_FOLDER": "technical_ticket_assignment"
+  },
+  {
+    "TOPIC": "Analyze patient screening logs, electronic health record eligibility flags, site investigator availability calendars, and historical enrollment rates to identify recruitment bottlenecks, generating a prioritized site intervention list.",
+    "TASK_FOLDER": "enrollment_bottleneck_analysis"
+  },
+  {
+    "TOPIC": "Identify duplicate benefit applications by cross-referencing applicant identity documents, household composition records, prior application IDs, and income verification submissions, outputting a flagged case list for manual review to prevent overpayment.",
+    "TASK_FOLDER": "duplicate_benefit_detection"
+  },
+  {
+    "TOPIC": "Identify potential benefit overpayments by cross-referencing recipient employment status updates from payroll data hubs, declared income from periodic self-reports, and bank transaction alerts for large deposits, outputting a prioritized investigation list with calculated discrepancy amounts.",
+    "TASK_FOLDER": "overpayment_investigation_list"
+  },
+  {
+    "TOPIC": "Assess housing assistance eligibility changes by analyzing tenant income certifications, periodic utility bill submissions, property inspection reports, and regional fair market rent benchmarks, generating a case roster for benefit adjustment or termination.",
+    "TASK_FOLDER": "housing_assistance_eligibility_review"
+  },
+  {
+    "TOPIC": "Identify high-risk prepaid subscribers for proactive retention offers. Analyze call detail records (CDRs), top-up patterns, customer service interaction logs, and competitor promotional data to target users with declining usage and negative sentiment, generating a prioritized call list for the retention team.",
+    "TASK_FOLDER": "prepaid_churn_retention_list"
+  },
+  {
+    "TOPIC": "Analyze feature flag performance and user impact. Correlate flag configuration changes, application error logs, user session analytics, and support ticket volume to identify flags causing increased errors or negative feedback, outputting a rollback recommendation report with supporting metrics.",
+    "TASK_FOLDER": "flag_performance_rollback_analysis"
+  },
+  {
+    "TOPIC": "Audit enterprise feature flag compliance and security. Cross-reference flag targeting rules, employee Active Directory groups, change management tickets, and audit logs to identify unauthorized or non-compliant flag configurations, generating a remediation roster for security review.",
+    "TASK_FOLDER": "flag_compliance_security_audit"
+  },
+  {
+    "TOPIC": "Identify mis-sorted packages before shipping by cross-referencing item dimension scans, weight sensor readings, destination postal codes, and packing station worker logs to output a daily re-sort list with location and cost-avoidance estimates.",
+    "TASK_FOLDER": "mis_sorted_package_detection"
+  },
+  {
+    "TOPIC": "Optimize replenishment labor by analyzing real-time pick-face stock levels, historical hourly order-picking rates, inbound receiving dock schedules, and forklift telemetry to generate a prioritized task list for stockers with expected time savings.",
+    "TASK_FOLDER": "dynamic_replenishment_scheduling"
+  },
+  {
+    "TOPIC": "Analyze customer dropped call complaints by cross-referencing network performance logs, cell tower maintenance schedules, 3rd-party signal strength maps, and subscriber location data to identify persistent coverage gaps, outputting a prioritized tower upgrade list.",
+    "TASK_FOLDER": "dropped_call_gap_analysis"
+  },
+  {
+    "TOPIC": "Identify potential fraudulent ticket purchases. Cross-reference purchase transaction timestamps, device/IP geolocation data, customer account purchase histories, and ticket resale platform listings to flag high-risk orders, generating a daily review queue for the fraud prevention team.",
+    "TASK_FOLDER": "fraud_detection_review"
+  },
+  {
+    "TOPIC": "Optimize daily gas nominations by cross-referencing shipper contract volumes, real-time pipeline sensor pressure/flow data, compressor station fuel consumption logs, and downstream customer forecasted demand to identify constrained segments and calculate optimal hourly flow adjustments, outputting a dispatch instruction set.",
+    "TASK_FOLDER": "daily_nomination_optimization"
+  },
+  {
+    "TOPIC": "Validate pipeline capacity bookings by cross-referencing shipper reservation requests, historical segment flow volatility models, scheduled maintenance calendars for valves/pumps, and real-time weather impact forecasts to confirm or adjust allocated capacities, outputting a finalized and balanced capacity allocation report.",
+    "TASK_FOLDER": "capacity_booking_validation"
+  },
+  {
+    "TOPIC": "Audit prerequisite waivers for graduation clearance. Cross-reference student waiver petitions, course substitution logs, historical grade transcripts, and degree audit rule sets to identify non-compliant approvals, compiling the exceptions into a compliance review dossier.",
+    "TASK_FOLDER": "prerequisite_waiver_audit"
+  },
+  {
+    "TOPIC": "A new financial regulation modifies reporting thresholds. The system cross-references the regulatory text, client account transaction histories, previous report filings, and jurisdictional rule mappings to generate a list of impacted clients requiring updated disclosures.",
+    "TASK_FOLDER": "regulatory_reporting_threshold_update"
+  },
+  {
+    "TOPIC": "A health authority updates clinical trial safety protocols. The process cross-references the new guidelines, active trial phase statuses, patient consent form versions, and site audit histories to produce a compliance action plan with prioritized protocol amendments.",
+    "TASK_FOLDER": "clinical_trial_protocol_compliance"
+  },
+  {
+    "TOPIC": "Assess project profitability by cross-referencing architect timesheet entries, project budget allocations, client billing invoices, and vendor/subcontractor cost ledgers to identify projects with significant budget overruns, outputting a detailed variance report for management review.",
+    "TASK_FOLDER": "project_profitability_audit"
+  },
+  {
+    "TOPIC": "Identify cell towers requiring capacity upgrades by analyzing per-sector traffic volume trends, historical peak usage, adjacent tower handoff failure rates, and planned local construction permits, outputting a prioritized upgrade list with recommended new radio unit configurations.",
+    "TASK_FOLDER": "tower_upgrade_prioritization"
+  },
+  {
+    "TOPIC": "Analyze pilot duty time compliance and fatigue risk by correlating crew pairing schedules, actual flight logs, crew rest period declarations, and regulatory duty time limits to generate a non-compliance report with recommended roster adjustments.",
+    "TASK_FOLDER": "duty_time_compliance_audit"
+  },
+  {
+    "TOPIC": "Identify emerging brand crises by correlating real-time social media post volume, sentiment scores from comment analysis, influencer account verification flags, and product mention metadata, outputting a prioritized alert dashboard for PR teams.",
+    "TASK_FOLDER": "brand_crisis_alert_dashboard"
+  },
+  {
+    "TOPIC": "Detect anomalous residential energy consumption by cross-referencing smart meter interval data, household appliance registration databases, local weather station feeds, and tariff change logs to pinpoint faulty meters or unauthorized usage, producing a field inspection list.",
+    "TASK_FOLDER": "anomalous_consumption_detection"
+  },
+  {
+    "TOPIC": "Selecting optimal sites for new retail outlets requires cross-referencing competitor proximity maps, local demographic census data, commercial real estate lease terms, and traffic flow analytics to generate a ranked shortlist of locations with projected first-year footfall.",
+    "TASK_FOLDER": "new_store_site_selection"
+  },
+  {
+    "TOPIC": "Evaluating underperforming stores for potential closure involves analyzing point-of-sale revenue trends, local competitor density shifts, lease renewal cost projections, and regional marketing spend efficiency to produce a prioritized closure list with estimated annual cost savings.",
+    "TASK_FOLDER": "underperforming_store_closure_assessment"
+  },
+  {
+    "TOPIC": "Identify perishable goods at risk of spoilage by cross-referencing real-time shelf-life data, daily sales velocity, upcoming promotional calendars, and warehouse stock levels to generate a priority markdown list for items within 48 hours of expiry.",
+    "TASK_FOLDER": "perishable_spoilage_risk_alert"
+  },
+  {
+    "TOPIC": "Flag high-risk project milestones by analyzing historical story point estimation accuracy, dependency mapping from Confluence, recent bug escape rates from QA, and team member churn data, generating a mitigation checklist for the next sprint planning session.",
+    "TASK_FOLDER": "milestone_risk_assessment"
+  },
+  {
+    "TOPIC": "Detect aging high-impact tickets at risk of breaching SLAs. Monitor ticket priority, assignment history, escalation logs, and real-time technician availability to generate a daily intervention list requiring managerial escalation or resource reassignment.",
+    "TASK_FOLDER": "sla_breach_prevention"
+  },
+  {
+    "TOPIC": "Ensuring regulatory compliance for a turbine overhaul involves cross-referencing historical emission logs, spare parts inventory levels, environmental permit conditions, and certified technician certifications to produce a pre-outage compliance checklist and gap report.",
+    "TASK_FOLDER": "regulatory_compliance_checklist_generation"
+  },
+  {
+    "TOPIC": "Plan school bus evacuation staging. Cross-reference student home addresses, bus GPS capacity logs, designated shelter locations with capacity limits, and road network bridge weight restrictions to produce per-school loading schedules and bus dispatch routes.",
+    "TASK_FOLDER": "school_bus_evacuation_staging"
+  },
+  {
+    "TOPIC": "Identify underutilized public facilities for potential consolidation. Analyze utility bills, scheduled maintenance logs, program attendance records, and annual capital improvement requests to flag buildings with occupancy below 30%, generating a recommendation report for closures or shared-space initiatives.",
+    "TASK_FOLDER": "facility_utilization_consolidation"
+  },
+  {
+    "TOPIC": "Optimize streetlight maintenance budget allocation. Correlate historical repair work orders, energy consumption data by zone, citizen complaint logs, and traffic accident reports to prioritize high-failure-rate or high-risk areas, producing a prioritized repair schedule and budget reallocation proposal.",
+    "TASK_FOLDER": "streetlight_maintenance_optimization"
+  },
+  {
+    "TOPIC": "Identify high-risk import shipments for physical inspection. Cross-reference declared HS codes, shipper compliance history, country of origin risk scores, and commodity-specific duty evasion patterns to flag declarations with >85% anomaly probability, outputting a daily inspection shortlist.",
+    "TASK_FOLDER": "high_risk_inspection_targeting"
+  },
+  {
+    "TOPIC": "Validate declared customs values to prevent underpayment. Analyze supplier invoices, freight and insurance cost ledgers, current exchange rate tables, and product-specific market value benchmarks to flag entries with >10% value discrepancy, outputting a discrepancy report for audit.",
+    "TASK_FOLDER": "customs_value_verification"
+  },
+  {
+    "TOPIC": "Optimize yard crane deployment by correlating vessel stowage plans, real-time truck arrival manifests, container GPS positions, and crane maintenance logs to generate a prioritized worklist for crane operators, minimizing vessel turnaround time.",
+    "TASK_FOLDER": "crane_deployment_optimization"
+  },
+  {
+    "TOPIC": "Identify prerequisite violation patterns. Analyze student academic transcripts, course prerequisite trees, registration attempt logs, and advisor override records to detect systemic gaps in prerequisite enforcement, outputting a violation report with recommended policy adjustments.",
+    "TASK_FOLDER": "prerequisite_violation_analysis"
+  },
+  {
+    "TOPIC": "Identify high-risk orders for manual fraud review. Cross-reference customer purchase history, IP geolocation mismatch flags, real-time card issuer decline codes, and shipping address verification scores to output a prioritized queue of suspicious orders with recommended verification steps.",
+    "TASK_FOLDER": "fraud_screening_order_queue"
+  },
+  {
+    "TOPIC": "Optimize warehouse pick-path efficiency. Analyze daily order SKU assortments, real-time picker GPS location data, physical shelf zone mappings, and item weight/volume to generate a dynamic, route-optimized batch pick list for each warehouse associate.",
+    "TASK_FOLDER": "dynamic_pick_path_optimization"
+  },
+  {
+    "TOPIC": "Identify components at risk of stockout. Correlate active production orders, multi-level bill of materials, real-time inventory levels, and supplier lead times to flag parts with insufficient coverage, generating a prioritized procurement alert list.",
+    "TASK_FOLDER": "component_stockout_risk_analysis"
+  },
+  {
+    "TOPIC": "Validate finished goods cost accuracy. Reconcile current raw material prices, approved vendor lists, labor routing standards, and actual production yield reports against the standard cost bill of materials, outputting a variance report for cost revision.",
+    "TASK_FOLDER": "bom_cost_variance_audit"
+  },
+  {
+    "TOPIC": "Identify at-risk customer accounts for proactive credit management. Analyze historical payment terms, invoice aging reports, recent order patterns, and industry-specific economic indicators to flag accounts with high probability of >60 day delinquency, generating a prioritized contact list.",
+    "TASK_FOLDER": "delinquency_risk_identification"
+  },
+  {
+    "TOPIC": "Optimize short-term cash reserves by forecasting weekly outflows. Synthesize payroll schedules, vendor payment calendars, upcoming tax liabilities, and historical expense variance to project daily cash positions, producing a weekly funding recommendation for the operating account.",
+    "TASK_FOLDER": "weekly_cash_position_forecast"
+  },
+  {
+    "TOPIC": "Optimize classroom and specialist room assignments. Cross-reference teacher subject certifications, class enrollment rosters, room capacity and equipment lists, and mandatory weekly instructional minutes to produce a conflict-free weekly room allocation schedule.",
+    "TASK_FOLDER": "classroom_assignment_optimization"
+  },
+  {
+    "TOPIC": "Balance student course requests against teacher availability. Analyze student elective preference surveys, teacher contracted periods and subject assignments, core course requirements, and maximum class size limits to generate a finalized student timetable for the semester.",
+    "TASK_FOLDER": "student_timetable_generation"
+  },
+  {
+    "TOPIC": "Identify privileged documents inadvertently produced in litigation by cross-referencing attorney-client email metadata, privilege log entries, opposing counsel's production index, and internal employee role directories to output a clawback request list with specific bates numbers.",
+    "TASK_FOLDER": "privilege_review_breach"
+  },
+  {
+    "TOPIC": "Flag non-responsive documents in a large production by comparing custodian data maps, keyword search hit reports, date range filters, and opposing party's requests for production to output a validated set for exclusion, reducing review volume.",
+    "TASK_FOLDER": "non_responsive_filtering"
+  },
+  {
+    "TOPIC": "Generate a weekly referee assignment roster by cross-referencing referee availability logs, their certification levels for different match types, historical team-referee conflict records, and venue locations to ensure compliant and conflict-free officiating for all fixtures.",
+    "TASK_FOLDER": "referee_assignment_scheduling"
+  },
+  {
+    "TOPIC": "Produce a venue utilization and maintenance schedule by analyzing the upcoming fixture calendar, historical pitch wear data, contracted third-party events, and ground staff shift patterns to optimize pitch readiness and allocate resources.",
+    "TASK_FOLDER": "venue_maintenance_scheduling"
+  },
+  {
+    "TOPIC": "Optimize driver allocation to reduce passenger wait times. Cross-reference real-time ride requests, active driver locations and statuses, historical demand heatmaps, and current traffic flow data to generate a dispatch priority list with recommended repositioning instructions.",
+    "TASK_FOLDER": "dynamic_driver_repositioning"
+  },
+  {
+    "TOPIC": "Validate driver incentive payouts for peak-hour rides. Cross-reference trip completion logs, surge pricing zone timestamps, driver online session records, and promotional campaign terms to flag ineligible claims, outputting an adjusted payout report with discrepancy reasons.",
+    "TASK_FOLDER": "peak_hour_incentive_audit"
+  },
+  {
+    "TOPIC": "Identify and reconcile failed high-value cross-border payments. Analyze SWIFT message status codes, nostro account statements, correspondent bank fee schedules, and customer transaction logs to pinpoint failures, outputting a reconciliation file with root causes and required manual intervention steps.",
+    "TASK_FOLDER": "failed_payment_reconciliation"
+  },
+  {
+    "TOPIC": "Identify units at risk of wastage by analyzing real-time inventory levels, blood type demand forecasts from hospital contracts, upcoming expiration dates, and inter-bank transfer request logs to produce a prioritized redistribution list.",
+    "TASK_FOLDER": "wastage_risk_redistribution"
+  },
+  {
+    "TOPIC": "Predict next quarter's packaging material needs. Analyze subscriber growth projections, box assembly schedules, supplier lead times, and current inventory levels to produce a purchase requisition with material types and order dates.",
+    "TASK_FOLDER": "packaging_material_forecast"
+  },
+  {
+    "TOPIC": "Analyze daily package volumes, driver shift capacities, real-time traffic patterns, and vehicle load capacities to dynamically partition delivery zones, generating an optimized daily zone assignment map for dispatch teams.",
+    "TASK_FOLDER": "dynamic_zone_optimization"
+  },
+  {
+    "TOPIC": "Identify potential seeding errors by cross-referencing player regional ranking tables, historical head-to-head match records, qualifier stage performance metrics, and current bracket progression to output a flagged match list for manual review.",
+    "TASK_FOLDER": "seed_validation_audit"
+  },
+  {
+    "TOPIC": "Reconcile billed amounts against actual consumption for multi-tenant buildings by analyzing master vs. sub-meter readings, lease agreement utility clauses, common area allocation tables, and tariff rate schedules to calculate tenant-specific billing adjustments, outputting a corrected chargeback ledger.",
+    "TASK_FOLDER": "multi_tenant_billing_reconciliation"
+  },
+  {
+    "TOPIC": "Audit disaster recovery readiness by synchronizing database replication lag metrics, storage snapshot schedules, DNS failover test logs, and regional health check histories across providers to generate a compliance gap document.",
+    "TASK_FOLDER": "multi_cloud_dr_readiness_audit"
+  },
+  {
+    "TOPIC": "Validate deployment readiness by cross-referencing recent commit test coverage percentages, open high-priority Jira tickets, environment-specific configuration drift reports, and last successful security scan timestamps to output a go/no-go dashboard with blocking issues.",
+    "TASK_FOLDER": "deployment_readiness_gate"
+  },
+  {
+    "TOPIC": "Cross-reference supplier qualification certificates, past project performance scores, submitted bid pricing matrices, and mandatory sustainability criteria checklists to generate a ranked shortlist of compliant vendors for a municipal infrastructure tender.",
+    "TASK_FOLDER": "bidder_compliance_shortlisting"
+  },
+  {
+    "TOPIC": "Analyze historical bid patterns, current market material price indices, competing vendor financial stability reports, and internal budget forecasts to produce a risk-adjusted cost benchmark for an upcoming public IT procurement.",
+    "TASK_FOLDER": "procurement_cost_benchmarking"
+  },
+  {
+    "TOPIC": "Monitor competitor price changes and stock availability for key product categories. Analyze daily scraped competitor prices, our current catalog pricing, supplier cost sheets, and historical conversion rate data to generate a price adjustment alert list with recommended actions (match, hold, or promote).",
+    "TASK_FOLDER": "competitor_price_alert_generation"
+  },
+  {
+    "TOPIC": "Monitor for single-source supplier risk by analyzing purchase order history, supplier financial health scores, geopolitical risk indices, and raw material inventory levels, outputting a prioritized mitigation list of critical components needing alternate suppliers.",
+    "TASK_FOLDER": "single_source_supplier_risk"
+  },
+  {
+    "TOPIC": "Identify shipments at high risk of customs delay by cross-referencing carrier advance manifests, real-time port congestion data, historical HS code inspection rates, and supplier compliance documentation, generating an alert list for proactive broker intervention.",
+    "TASK_FOLDER": "customs_delay_risk_alert"
+  },
+  {
+    "TOPIC": "Identify high-risk construction sites for proactive inspection. Cross-reference permit applications, contractor violation histories, geospatial zoning overlays, and citizen complaint logs to generate a weekly prioritized inspection list with risk scores.",
+    "TASK_FOLDER": "proactive_site_inspection_prioritization"
+  },
+  {
+    "TOPIC": "Detect unpermitted short-term rental properties. Analyze property tax records, rental platform listing data, utility consumption patterns, and occupancy permit registries to output a compliance case file for enforcement with evidence summaries.",
+    "TASK_FOLDER": "short_term_rental_compliance_sweep"
+  },
+  {
+    "TOPIC": "Identify underutilized servers for consolidation by analyzing 90-day CPU utilization logs, power consumption meters, virtualization host capacity matrices, and active service dependency maps, outputting a decommissioning schedule with migration priorities.",
+    "TASK_FOLDER": "server_consolidation_analysis"
+  },
+  {
+    "TOPIC": "Analyze historical bug fix times, current developer availability, customer contract SLA tiers, and feature usage telemetry to assign a priority score and recommended assignee for each new bug, outputting a ranked queue for the weekly triage meeting.",
+    "TASK_FOLDER": "sla_aware_bug_scoring"
+  },
+  {
+    "TOPIC": "Audit branch protection rule compliance by correlating repository settings, forced push event logs, code review approval patterns, and status check pass/fail histories to produce a violation report for security team action.",
+    "TASK_FOLDER": "branch_protection_audit"
+  },
+  {
+    "TOPIC": "Evaluate commercial property insurance applications by cross-referencing building construction permits, historical regional flood/fire claims, current occupancy sensor data, and applicant financial stability scores to generate a risk-tiered quote list with recommended coverage limits and premiums.",
+    "TASK_FOLDER": "commercial_property_risk_tiering"
+  },
+  {
+    "TOPIC": "Identify high-risk loan applications by correlating applicant credit bureau data, submitted income verification documents, internal fraud alert flags, and historical default rates by region to generate a prioritized review queue for underwriters.",
+    "TASK_FOLDER": "high_risk_application_detection"
+  },
+  {
+    "TOPIC": "Reduce medication dispensing errors by cross-referencing electronic medication administration records (eMAR), pharmacy dispensation logs, nurse shift assignments, and patient allergy databases to flag mismatches, generating a daily reconciliation report for pharmacist review.",
+    "TASK_FOLDER": "medication_error_reconciliation"
+  },
+  {
+    "TOPIC": "Audit emergency resource utilization by correlating dispatch radio transcripts, equipment maintenance logs, personnel certification databases, and incident outcome reports to produce a prioritized list of units requiring retraining or re-equipping.",
+    "TASK_FOLDER": "resource_utilization_audit"
+  },
+  {
+    "TOPIC": "Identifying root cause of application slowdowns requires cross-referencing network device SNMP trap logs, NetFlow session data, application performance monitoring (APM) traces, and recent change management tickets to pinpoint faulty network segments, outputting a prioritized remediation list with correlated evidence.",
+    "TASK_FOLDER": "application_slowdown_root_cause"
+  },
+  {
+    "TOPIC": "Triage of intermittent VoIP call drops involves correlating real-time packet loss metrics from network probes, SIP server error logs, endpoint firmware versions, and wireless access point client health scores to isolate degradation sources, producing a fault localization report for engineering teams.",
+    "TASK_FOLDER": "voip_call_drop_triage"
+  },
+  {
+    "TOPIC": "Identify high-risk reservation fraud by analyzing booking patterns, comparing guest identity document scans against blacklist databases, cross-referencing payment method histories, and assessing no-show records to produce a daily review list for the security team.",
+    "TASK_FOLDER": "fraudulent_booking_detection"
+  },
+  {
+    "TOPIC": "Validate certified seed lot purity for regulatory compliance. Cross-reference field harvest logs, lab germination test results, parent seed stock certificates, and government inspection records to confirm traceability, generating a compliance certificate for accepted lots.",
+    "TASK_FOLDER": "purity_compliance_validation"
+  },
+  {
+    "TOPIC": "Identify potential seed lot contamination events during storage. Correlate warehouse environmental sensor logs, lot movement histories, pest control treatment schedules, and adjacent lot phytosanitary statuses to flag compromised inventory, producing a quarantine advisory list for suspect lots.",
+    "TASK_FOLDER": "contamination_event_detection"
+  },
+  {
+    "TOPIC": "Identifying systemic manufacturing defects requires cross-referencing assembly line sensor logs, component supplier batch IDs, final inspection images, and operator shift schedules to pinpoint root causes, outputting a prioritized corrective action list for supplier rework and machine recalibration.",
+    "TASK_FOLDER": "systemic_defect_root_cause_analysis"
+  },
+  {
+    "TOPIC": "Validating warranty claim legitimacy requires cross-referencing customer-submitted failure photos, serial number production dates, quality control pass/fail records from final test stations, and repair center service histories, outputting a flagged claims report for fraud investigation.",
+    "TASK_FOLDER": "warranty_claim_validation_fraud_detection"
+  },
+  {
+    "TOPIC": "Analyze audit file access logs, staff time entry records, client document request histories, and engagement team assignments to identify potential scope creep or unauthorized work, producing a flagged activities report for partner review.",
+    "TASK_FOLDER": "audit_scope_compliance_check"
+  },
+  {
+    "TOPIC": "Cross-reference audit program checklists, prior year findings, current year general ledger entries, and client-provided support documents to verify all high-risk areas are tested, generating a coverage gap analysis for the audit manager.",
+    "TASK_FOLDER": "audit_risk_coverage_validation"
+  },
+  {
+    "TOPIC": "Optimize preventative maintenance schedules to minimize unscheduled downtime. Analyze vehicle telemetry (mileage, engine hours), upcoming reservation calendars, parts inventory levels, and technician certification rosters to generate a prioritized weekly maintenance dispatch list.",
+    "TASK_FOLDER": "preventative_maintenance_dispatch"
+  },
+  {
+    "TOPIC": "Optimize recruitment channel spend. Correlate candidate source (job boards, referrals, agencies), time-to-hire metrics, first-year retention rates, and role-specific hiring costs to produce a quarterly budget allocation plan with expected quality-of-hire KPIs.",
+    "TASK_FOLDER": "recruitment_channel_roi_optimization"
+  },
+  {
+    "TOPIC": "Identify underperforming stations for relocation by analyzing monthly usage trends, station maintenance logs, surrounding points-of-interest density, and user complaint reports, outputting a ranked list of candidate stations for decommissioning or relocation.",
+    "TASK_FOLDER": "station_performance_review"
+  },
+  {
+    "TOPIC": "Reconcile concession stand inventory and sales to detect shrinkage. Cross-reference point-of-sale transaction logs, vendor delivery invoices, shift-based staff schedules, and waste log sheets to identify discrepancies between sold and used stock, outputting a variance report with flagged stands for investigation.",
+    "TASK_FOLDER": "concession_inventory_reconciliation"
+  },
+  {
+    "TOPIC": "Validate contracted sponsorship asset delivery during events. Correlate sponsor entitlement agreements, broadcast camera angle logs, in-stadium digital signage schedules, and social media monitoring feeds to confirm delivered impressions, outputting a compliance report detailing any shortfalls for billing adjustments.",
+    "TASK_FOLDER": "sponsorship_fulfillment_audit"
+  },
+  {
+    "TOPIC": "When a customer's ordered item is out-of-stock, the system must cross-reference product category, brand affinity, nutritional profiles, price sensitivity, and real-time inventory to propose the best substitute, outputting a ranked substitution list for pickers.",
+    "TASK_FOLDER": "dynamic_substitution_engine"
+  },
+  {
+    "TOPIC": "Optimize individual training loads by cross-referencing daily GPS performance metrics, weekly wellness survey responses, academic timetable conflicts, and periodic musculoskeletal screening results to generate personalized weekly training schedules that balance development and injury risk.",
+    "TASK_FOLDER": "personalized_training_load_optimization"
+  },
+  {
+    "TOPIC": "Identify water distribution zones with persistent high leakage. Cross-reference hourly flow meter readings, district pressure sensor data, pipe age and material logs, and maintenance work order history to flag zones where loss exceeds 15% for 72 hours, outputting a prioritized repair schedule.",
+    "TASK_FOLDER": "leakage_detection_prioritization"
+  },
+  {
+    "TOPIC": "Detect potential licensing revenue leakage by correlating global distributor shipment volumes, territory-specific license agreements, product SKU royalty rates, and audit exception reports, outputting a prioritized list of high-risk partners for compliance review.",
+    "TASK_FOLDER": "revenue_compliance_monitoring"
+  },
+  {
+    "TOPIC": "Identify cattle at high risk for respiratory outbreaks by correlating real-time barn environmental sensor data, individual animal vaccination histories, feedlot movement logs, and veterinary treatment records, generating a daily quarantine watchlist for the herd manager.",
+    "TASK_FOLDER": "respiratory_outbreak_risk_watchlist"
+  },
+  {
+    "TOPIC": "Optimize feed efficiency and cost by analyzing automated feeder consumption logs, breed-specific growth target curves, silo inventory levels, and recent bulk commodity market prices, producing a weekly adjusted feed ration schedule for each pen.",
+    "TASK_FOLDER": "feed_efficiency_optimization_schedule"
+  },
+  {
+    "TOPIC": "Identify podcasts with declining listener retention for content strategy review. Analyze episode-level drop-off rates, listener demographic shifts, ad placement logs, and competitor show performance to flag series with >15% retention drop, outputting a priority list with episode segments for revision.",
+    "TASK_FOLDER": "listener_retention_audit"
+  },
+  {
+    "TOPIC": "Optimize ad inventory pricing by analyzing fill rates. Process historical impression logs, listener geographic concentration, advertiser category performance, and seasonal sponsorship trends to recommend dynamic CPM adjustments, outputting a pricing schedule per show and region.",
+    "TASK_FOLDER": "ad_inventory_pricing_optimization"
+  },
+  {
+    "TOPIC": "Validate temperature excursion reports. Cross-reference temperature logger data from shipments, product-specific stability profiles, warehouse thermal mapping studies, and carrier incident reports to determine product viability and generate a disposition roster with recommended quarantine or release actions.",
+    "TASK_FOLDER": "temperature_excursion_validation"
+  },
+  {
+    "TOPIC": "Reconcile controlled substance chain-of-custody. Cross-reference shipment manifests, DEA Form 222 electronic records, facility license verification databases, and GPS/geofencing logs to identify custody gaps or regulatory discrepancies, outputting an audit roster with flagged shipments for investigation.",
+    "TASK_FOLDER": "controlled_substance_custody_audit"
+  },
+  {
+    "TOPIC": "Identify malfunctioning or suboptimal traffic signals by correlating pedestrian push-button logs, signal phase change telemetry, real-time congestion alerts from navigation apps, and citizen complaint reports, generating a maintenance dispatch list ranked by urgency.",
+    "TASK_FOLDER": "signal_fault_detection_dispatch"
+  },
+  {
+    "TOPIC": "Validate a reinsurer's quarterly profit commission statement. Cross-reference ceded premium statements, paid loss bordereaux, treaty-defined sliding scale commission formulas, and prior year's loss carry-forward balances to verify the calculated commission amount, outputting a signed approval or a discrepancy report.",
+    "TASK_FOLDER": "profit_commission_validation"
+  },
+  {
+    "TOPIC": "Assess aggregate treaty exhaustion for catastrophe coverage. Cross-reference real-time industry loss indices, cedent's reported loss advices, treaty attachment and limit terms, and inuring reinsurance recoveries to determine remaining coverage, outputting a dashboard with active limit status per treaty.",
+    "TASK_FOLDER": "aggregate_limit_monitoring"
+  },
+  {
+    "TOPIC": "Identify unpaid mechanical royalties for streaming. Cross-reference ISRC codes from streaming platform reports, publisher and songwriter splits from registration databases, and historical payment ledgers to flag unmatched tracks, generating a discrepancy report for collection societies.",
+    "TASK_FOLDER": "unpaid_mechanical_royalty_audit"
+  },
+  {
+    "TOPIC": "Detect royalty overpayments from incorrect territory splits. Analyze distributor sales reports, artist contracts specifying regional revenue shares, and tax treaty documentation to find mismatches, producing a recovery claim list with calculated overpayment amounts per territory.",
+    "TASK_FOLDER": "territory_split_verification"
+  },
+  {
+    "TOPIC": "Cross-reference applicant biometric submissions, visa category quotas, embassy appointment backlogs, and document verification flags to identify stalled high-priority applications, generating a prioritized intervention list for case officers.",
+    "TASK_FOLDER": "stalled_application_triage"
+  },
+  {
+    "TOPIC": "Identify high-volume job requisitions with chronic hiring delays. Analyze requisition age, candidate application flow rates, hiring manager feedback scores, and recruiter assignment logs to flag roles open >60 days, outputting a priority intervention list with bottleneck causes.",
+    "TASK_FOLDER": "chronic_requisition_bottlenecks"
+  },
+  {
+    "TOPIC": "Optimize recruitment agency spend by analyzing agency-submitted candidate profiles, interview-to-offer conversion rates, time-to-fill metrics, and final hire retention data to identify underperforming vendors, generating a vendor performance scorecard and renewal recommendations.",
+    "TASK_FOLDER": "agency_performance_optimization"
+  },
+  {
+    "TOPIC": "Identify critical supply risks by cross-referencing supplier delivery performance history, geopolitical risk scores for source regions, raw material consumption forecasts, and alternate supplier qualification status to output a prioritized mitigation action list.",
+    "TASK_FOLDER": "supply_risk_mitigation_prioritization"
+  },
+  {
+    "TOPIC": "Identify inefficient delivery zones by analyzing geofenced order clusters, average rider transit times between pickups, restaurant preparation duration logs, and customer address density to produce a re-zoning proposal with reassigned rider quotas and new zone boundaries.",
+    "TASK_FOLDER": "delivery_zone_redesign"
+  },
+  {
+    "TOPIC": "Reconcile aircraft de-icing service invoices. Cross-reference de-icing truck fluid usage logs, scheduled departure times, actual pushback timestamps, and contracted per-unit fluid rates to validate charges against actual winter operations, outputting an approved payment file with flagged discrepancies.",
+    "TASK_FOLDER": "deicing_invoice_reconciliation"
+  },
+  {
+    "TOPIC": "Flag high-risk claims for potential fraud. Correlate employee injury reports, medical treatment histories, witness statements, and claimant employment records to identify inconsistent narratives or patterns, generating a prioritized investigation list for the special investigations unit.",
+    "TASK_FOLDER": "fraud_risk_flagging"
+  },
+  {
+    "TOPIC": "Analyze player spending patterns by correlating in-game purchase receipts, virtual currency transaction logs, player progression tiers, and limited-time event calendars to identify under-monetized player segments, generating a targeted promotion campaign list.",
+    "TASK_FOLDER": "player_monetization_analysis"
+  },
+  {
+    "TOPIC": "Detect fraudulent virtual item trading by cross-referencing player account histories, peer-to-peer marketplace listings, item rarity databases, and sudden wealth influx alerts, producing a daily report of suspicious accounts for manual review.",
+    "TASK_FOLDER": "fraudulent_trading_detection"
+  },
+  {
+    "TOPIC": "Flagging grant applications with high-risk budget allocations requires analyzing proposed expense line items, historical awardee financial reports, institutional overhead rate tables, and PI publication-to-funding ratios to identify proposals exceeding category benchmarks, generating a risk assessment report for panel review.",
+    "TASK_FOLDER": "budget_risk_assessment"
+  },
+  {
+    "TOPIC": "Optimize industrial conveyor belt replacement by cross-referencing IoT vibration sensor feeds, historical component lifespan logs, production throughput schedules, and supplier lead times to produce a validated maintenance calendar minimizing unplanned downtime.",
+    "TASK_FOLDER": "conveyor_belt_replacement_optimization"
+  },
+  {
+    "TOPIC": "Detect content piracy by cross-referencing student subscription tiers, video streaming access logs, third-party site takedown notices, and course material download patterns, generating a prioritized takedown list for illegally distributed premium lectures.",
+    "TASK_FOLDER": "content_piracy_detection"
+  },
+  {
+    "TOPIC": "Identify startups for follow-on investment by analyzing portfolio company performance metrics (monthly burn, revenue growth), founder cap table dilution, competitor funding rounds, and internal partner sentiment scores, outputting a prioritized outreach list.",
+    "TASK_FOLDER": "follow_on_investment_screening"
+  },
+  {
+    "TOPIC": "Validate quarterly portfolio company KPI reports by cross-referencing submitted financials, signed board deck figures, SaaS platform API data, and previous report baselines to flag material discrepancies, outputting an exception report for partner review.",
+    "TASK_FOLDER": "kpi_report_validation"
+  },
+  {
+    "TOPIC": "Track competitor pricing changes by cross-referencing daily web-scraped price lists, historical pricing data, internal cost sheets, and product catalog mappings to identify market share threats, outputting an alert dashboard with recommended price adjustments.",
+    "TASK_FOLDER": "competitor_price_monitoring"
+  },
+  {
+    "TOPIC": "Detect patterns of upcoding by analyzing procedure code frequencies, provider specialty registries, patient demographic data, and historical claim denial rates to generate a prioritized provider audit list.",
+    "TASK_FOLDER": "upcoding_pattern_detection"
+  },
+  {
+    "TOPIC": "Generate a contract amendment impact report by cross-referencing master service agreement clauses, active change order requests, vendor compliance certifications, and project milestone payment schedules to identify non-compliant terms and required signatories.",
+    "TASK_FOLDER": "amendment_impact_reporting"
+  },
+  {
+    "TOPIC": "Produce a quarterly contract renewal forecast by analyzing usage metrics from SaaS platforms, upcoming expiration dates, stakeholder feedback from CRM systems, and historical negotiation notes to prioritize the renewal pipeline and required actions.",
+    "TASK_FOLDER": "renewal_forecast_pipeline"
+  },
+  {
+    "TOPIC": "Identify unspent grant funds nearing expiration. Cross-reference general ledger expenditure transactions, award modification notices, sponsor payment records, and institutional indirect cost rates to calculate remaining balances, outputting a priority use-it-or-lose-it list for project directors with 90-day deadlines.",
+    "TASK_FOLDER": "expiring_grant_funds_identification"
+  },
+  {
+    "TOPIC": "Investigate suspected insurance claims fraud by cross-referencing claimant policy details, medical provider billing codes, historical claim patterns, and independent adjuster field reports to identify inconsistencies, outputting a prioritized case list with evidence summaries.",
+    "TASK_FOLDER": "insurance_claim_fraud_investigation"
+  },
+  {
+    "TOPIC": "Detect fraudulent credit card applications by analyzing application form data, credit bureau scores, device fingerprinting logs, and known fraudster databases to flag high-risk submissions, producing a rejection roster with reason codes.",
+    "TASK_FOLDER": "credit_card_application_fraud_detection"
+  },
+  {
+    "TOPIC": "Analyze code review bottlenecks by correlating pull request metadata, reviewer assignment logs, team member availability calendars, and historical review completion times to identify overloaded reviewers, generating a rebalancing proposal.",
+    "TASK_FOLDER": "reviewer_load_rebalancing"
+  },
+  {
+    "TOPIC": "Validate compliance with mandatory security scans by cross-referencing pull request commits, CI pipeline execution logs, security tool findings databases, and merge approval timestamps to flag unreviewed vulnerabilities, producing a remediation backlog.",
+    "TASK_FOLDER": "security_scan_compliance"
+  },
+  {
+    "TOPIC": "Validate subcontractor progress payment applications. Cross-reference submitted work completion certificates, daily site supervisor logs, material delivery invoices, and architect inspection reports against the project schedule to calculate approved payment amounts, outputting a certified payment schedule.",
+    "TASK_FOLDER": "subcontractor_payment_validation"
+  },
+  {
+    "TOPIC": "Monitor project schedule compliance. Analyze daily equipment telemetry, labor timecard allocations, material procurement status updates, and weather delay logs against the baseline Gantt chart to generate a variance report with critical path impact assessments.",
+    "TASK_FOLDER": "schedule_variance_analysis"
+  },
+  {
+    "TOPIC": "Analyze departmental budget variance by correlating general ledger actuals, purchase order commitments, vendor invoice line items, and project milestone forecasts to identify overspending categories, outputting a variance explanation report with flagged items exceeding 10% variance.",
+    "TASK_FOLDER": "departmental_budget_variance_explanation"
+  },
+  {
+    "TOPIC": "Optimize public charger availability by cross-referencing real-time session logs, upcoming reservations, maintenance schedules, and local grid demand forecasts to generate a dynamic pricing and availability matrix for the next 24 hours.",
+    "TASK_FOLDER": "dynamic_pricing_optimization"
+  },
+  {
+    "TOPIC": "Identify underperforming charging stations by analyzing historical utilization rates, session failure logs, competitor proximity data, and regional EV registration trends, outputting a prioritized relocation list with projected revenue impact.",
+    "TASK_FOLDER": "station_performance_relocation"
+  },
+  {
+    "TOPIC": "Identify high-cost, low-satisfaction providers by analyzing claim adjudication records, member satisfaction survey scores, in-network fee schedules, and referral patterns, producing a targeted review list for contract renegotiation.",
+    "TASK_FOLDER": "provider_performance_review_targeting"
+  },
+  {
+    "TOPIC": "Validate network adequacy compliance by geocoding member addresses, mapping them to provider locations by specialty, and comparing against regulatory distance thresholds, generating a deficiency report for each service area.",
+    "TASK_FOLDER": "network_adequacy_compliance_report"
+  },
+  {
+    "TOPIC": "Identify and prioritize branch facility maintenance. Cross-reference equipment service logs, customer complaint tickets regarding ambient conditions, preventative maintenance schedules, and vendor contract response times to generate a ranked work order list for the quarter.",
+    "TASK_FOLDER": "facility_maintenance_prioritization"
+  },
+  {
+    "TOPIC": "Monitor high-demand textbook availability by cross-referencing course enrollment rosters, current library inventory counts, historical circulation data, and student reservation queues to identify shortage risks, outputting a procurement priority list with recommended purchase quantities.",
+    "TASK_FOLDER": "textbook_demand_analysis"
+  },
+  {
+    "TOPIC": "Identify overdue inter-library loan materials by reconciling partner institution due dates, internal patron contact logs, shipment tracking records, and replacement cost databases to calculate fines and replacement liabilities, outputting a reconciliation report with recovery actions.",
+    "TASK_FOLDER": "inter_library_loan_reconciliation"
+  },
+  {
+    "TOPIC": "Monitor patient safety by cross-referencing pharmacy dispensing records, electronic health records (EHR) for active diagnoses, known drug interaction databases, and lab test results to generate a daily alert list of patients requiring pharmacist intervention for potential adverse interactions.",
+    "TASK_FOLDER": "patient_drug_interaction_alerts"
+  },
+  {
+    "TOPIC": "Analyze clinical trial safety by correlating patient-reported adverse events, concomitant medication logs, pharmacokinetic sampling data, and trial protocol phase rules to produce a weekly report flagging participant cohorts for potential unanticipated drug-drug interaction signals.",
+    "TASK_FOLDER": "clinical_trial_interaction_signal_detection"
+  },
+  {
+    "TOPIC": "Identifying athletes at high risk of overtraining requires analyzing daily wellness survey scores, GPS training load metrics, sleep tracker data, and historical injury logs to flag individuals with cumulative fatigue spikes, generating a prioritized rest protocol list.",
+    "TASK_FOLDER": "overtraining_risk_identification"
+  },
+  {
+    "TOPIC": "Validate equipment-generated fall alerts by fusing motion sensor data, baseline activity profiles, scheduled caregiver visit logs, and audio event markers to filter false positives, producing a verified incident report for emergency contacts.",
+    "TASK_FOLDER": "fall_alert_verification"
+  },
+  {
+    "TOPIC": "Optimize daily technician schedules by cross-referencing live vehicle GPS locations, real-time traffic data, job priority tiers, and parts inventory levels at service vans to minimize travel time and missed appointments, producing a validated route sequence for each technician.",
+    "TASK_FOLDER": "dynamic_daily_routing"
+  },
+  {
+    "TOPIC": "Calculate the post-merger customer lifetime value (LTV) uplift. Integrate target company's historical purchase data, product-level profitability matrices, customer churn probabilities, and planned cross-sell conversion rates to model the combined entity's LTV, outputting a segmented customer list with projected 3-year value.",
+    "TASK_FOLDER": "post_merger_ltv_uplift"
+  },
+  {
+    "TOPIC": "Identify redundant software licenses for cost synergy analysis. Consolidate user access logs, per-seat contract pricing, and departmental employee rosters from both companies to flag overlapping enterprise SaaS subscriptions, outputting a rationalization plan with projected annual savings.",
+    "TASK_FOLDER": "license_rationalization_synergy"
+  },
+  {
+    "TOPIC": "Validate microservice deployment readiness by cross-referencing container image vulnerability scans, infrastructure resource quotas, dependency service health checks, and change request approvals to generate a go/no-go deployment manifest.",
+    "TASK_FOLDER": "deployment_readiness_validation"
+  },
+  {
+    "TOPIC": "Orchestrate a canary release by analyzing real-time application performance metrics, synthetic transaction success rates, user session error logs, and feature flag distributions to produce a verified promotion or rollback decision report.",
+    "TASK_FOLDER": "canary_release_orchestration"
+  },
+  {
+    "TOPIC": "Identify high-volume requesters and potential commercial data mining. Cross-reference requestor contact details, request metadata, document production logs, and fee waiver approvals to flag patterns of systematic extraction, generating a report for legal review.",
+    "TASK_FOLDER": "high_volume_requester_analysis"
+  },
+  {
+    "TOPIC": "Analyze donor engagement by cross-referencing campaign email open rates, recurring donation schedules, event attendance logs, and demographic segments to identify high-potential lapsed donors, generating a targeted re-engagement contact list with suggested ask amounts.",
+    "TASK_FOLDER": "donor_reengagement_analysis"
+  },
+  {
+    "TOPIC": "Reconcile fundraising totals by merging daily payment gateway deposits, in-kind donation appraisals, platform fee reports, and campaign-specific expense ledgers to produce a verified financial statement for each active campaign.",
+    "TASK_FOLDER": "campaign_financial_reconciliation"
+  },
+  {
+    "TOPIC": "Monitor and reconcile daily catch logs against vessel quotas by cross-referencing electronic catch reports, species-specific quota certificates, port agent inspection records, and satellite AIS data, generating a discrepancy report for vessels exceeding allocated limits.",
+    "TASK_FOLDER": "catch_quota_discrepancy_reporting"
+  },
+  {
+    "TOPIC": "Cross-reference technician GPS location timestamps, scheduled appointment windows, customer satisfaction survey scores, and service category complexity ratings to identify technicians consistently arriving late or receiving poor feedback, outputting a retraining priority list with performance summaries.",
+    "TASK_FOLDER": "technician_performance_review"
+  },
+  {
+    "TOPIC": "Analyze customer service request descriptions, technician skill certifications, parts inventory levels across warehouses, and seasonal demand forecasts to optimize weekly technician dispatch schedules, outputting a recommended assignment roster minimizing travel time and wait-for-part delays.",
+    "TASK_FOLDER": "dispatch_schedule_optimization"
+  },
+  {
+    "TOPIC": "Identify unattached persistent storage volumes. Cross-reference volume creation timestamps, last attachment events, associated snapshot histories, and current project budget alerts to generate a reclamation report listing volumes unused for over 90 days with estimated monthly savings.",
+    "TASK_FOLDER": "unattached_storage_reclamation"
+  },
+  {
+    "TOPIC": "Optimize weekly collection routes by cross-referencing historical bin weight sensor data, resident subscription tiers, real-time traffic patterns, and truck fuel consumption logs to generate a dynamic route schedule minimizing total drive time and fuel cost.",
+    "TASK_FOLDER": "dynamic_route_optimization"
+  },
+  {
+    "TOPIC": "Identify missed pickups requiring compensation by analyzing GPS truck stop locations, resident service request tickets, bin lift arm sensor activation logs, and contractual service level agreements to output a validated refund list with calculated credit amounts.",
+    "TASK_FOLDER": "missed_pickup_compensation"
+  },
+  {
+    "TOPIC": "Calculate monthly interconnect settlement charges by cross-referencing call detail records (CDRs) from multiple switches, current bilateral agreement rates, traffic routing tables, and prior period dispute logs, outputting a reconciled invoice summary for each partner carrier.",
+    "TASK_FOLDER": "interconnect_invoice_reconciliation"
+  },
+  {
+    "TOPIC": "Identify fraudulent international call traffic by analyzing interconnect CDR patterns, destination country risk scores, real-time traffic volume spikes against historical baselines, and known fraudulent number databases, outputting an alert report with recommended route blocks.",
+    "TASK_FOLDER": "fraudulent_traffic_detection"
+  },
+  {
+    "TOPIC": "Analyze player transfer targets by cross-referencing scouting reports, current squad positional depth charts, multi-year salary cap projections, and upcoming fixture congestion calendars to produce a prioritized shortlist with recommended bid ranges.",
+    "TASK_FOLDER": "transfer_target_prioritization"
+  },
+  {
+    "TOPIC": "Assigning manuscripts to reviewers requires matching manuscript keywords, reviewer publication histories, declared conflicts of interest, and past review quality scores to create an optimized and conflict-free reviewer assignment matrix for the editor.",
+    "TASK_FOLDER": "reviewer_manuscript_assignment"
+  },
+  {
+    "TOPIC": "Identify unauthorized subletting and occupancy violations. Cross-reference tenant lease agreements, utility consumption patterns, property access logs, and resident complaint histories to output a list of units requiring formal investigation.",
+    "TASK_FOLDER": "unauthorized_occupancy_detection"
+  },
+  {
+    "TOPIC": "Optimize preventative maintenance scheduling. Analyze work order histories, appliance warranty expirations, seasonal vendor service rates, and tenant repair request frequencies to generate a prioritized quarterly maintenance calendar.",
+    "TASK_FOLDER": "preventative_maintenance_optimization"
+  },
+  {
+    "TOPIC": "Optimize volunteer shift coverage by analyzing individual availability calendars, historical no-show rates, event-specific role requirements, and real-time weather forecasts to generate a finalized weekly schedule with prioritized backup assignments.",
+    "TASK_FOLDER": "volunteer_shift_optimization"
+  },
+  {
+    "TOPIC": "Identify volunteers eligible for recognition awards by cross-referencing total hours logged, specialized training certifications completed, peer feedback scores, and event leadership roles held to produce a quarterly commendation list with award tier recommendations.",
+    "TASK_FOLDER": "volunteer_recognition_eligibility"
+  },
+  {
+    "TOPIC": "Identifying industrial facilities at risk of non-compliance requires cross-referencing real-time effluent sensor data, permitted discharge limits, historical inspection violation reports, and scheduled maintenance logs to generate a prioritized list for field inspector dispatch.",
+    "TASK_FOLDER": "effluent_compliance_risk_assessment"
+  },
+  {
+    "TOPIC": "Tracking illegal deforestation requires analyzing satellite imagery change detection, land ownership registries, permitted logging concession maps, and historical habitat conservation reports to produce a verified incident dossier for regulatory enforcement action.",
+    "TASK_FOLDER": "deforestation_incident_verification"
+  },
+  {
+    "TOPIC": "Analyze a suspected data exfiltration event by correlating firewall egress logs, endpoint file access audit trails, user authentication timestamps, and data classification tags to identify the scope of compromised files and produce a containment report with affected asset lists.",
+    "TASK_FOLDER": "data_exfiltration_containment"
+  },
+  {
+    "TOPIC": "Prioritize post-breach remediation by cross-referencing vulnerability scan results, asset criticality scores, active threat intelligence feeds on exploited CVEs, and patch deployment status to generate a validated action list for immediate system patching.",
+    "TASK_FOLDER": "remediation_priority_validation"
+  },
+  {
+    "TOPIC": "Identify shipments at risk of missing contractual delivery windows. Analyze real-time vessel AIS positions, port congestion reports from terminal operators, historical customs clearance times, and shipper-provided incoterms to generate a prioritized alert list with recommended contingency actions.",
+    "TASK_FOLDER": "delivery_window_risk_assessment"
+  },
+  {
+    "TOPIC": "Optimize container load planning for multi-leg voyages. Process cargo manifests (weight, dimensions), vessel stowage plans, intermediate port discharge sequences, and land transport schedules to output a revised loading plan maximizing capacity utilization and minimizing re-handling.",
+    "TASK_FOLDER": "multi_leg_load_optimization"
+  },
+  {
+    "TOPIC": "Optimize e-commerce flash sale pricing by correlating real-time website clickstreams, competitor price tracking data, warehouse inventory turnover rates, and customer segment lifetime value scores to adjust discount tiers, producing a validated pricing schedule for the campaign.",
+    "TASK_FOLDER": "ecommerce_flash_sale_pricing_adjustment"
+  },
+  {
+    "TOPIC": "Optimize equipment rental periods against shooting schedules. Analyze scene breakdowns with required gear, rental house inventory and rate cards, on-set daily equipment logs, and contingency day buffers to identify early return opportunities, outputting a cost-saving roster with adjusted return dates.",
+    "TASK_FOLDER": "equipment_rental_period_optimization"
+  },
+  {
+    "TOPIC": "Reduce ingredient spoilage by analyzing supplier delivery schedules, real-time fridge temperature logs, recipe-based ingredient usage rates, and daily waste logs to produce a prioritized use-it-first list for kitchen staff.",
+    "TASK_FOLDER": "ingredient_spoilage_reduction"
+  },
+  {
+    "TOPIC": "Analyze competitor web activity by aggregating daily search result rankings, product pricing feeds, social media post volumes, and internal deal pipeline stages to flag accounts with rising competitive pressure, generating a prioritized defense list for sales teams.",
+    "TASK_FOLDER": "competitive_pressure_defense_list"
+  },
+  {
+    "TOPIC": "Match researchers with open grant calls by scanning funding opportunity databases, parsing PI publication records, querying institutional research expenditure reports, and checking collaborator network graphs to output a ranked list of high-fit funding calls per researcher.",
+    "TASK_FOLDER": "researcher_grant_fit_ranking"
+  },
+  {
+    "TOPIC": "Verify manuscript originality by comparing submission full-text against open-access repositories, preprint servers, citation matching scores, and retraction watchlists to flag potential plagiarism cases for editorial review.",
+    "TASK_FOLDER": "manuscript_originality_review_queue"
+  },
+  {
+    "TOPIC": "Validate influencer post deliverables by analysing post timing, contracted engagement targets, audience location data, and historical bot-detection scores to flag non-compliant content and produce a payment adjustment file with supporting evidence.",
+    "TASK_FOLDER": "influencer_deliverable_payment_adjustment"
+  },
+  {
+    "TOPIC": "Detect potential insider trading by comparing employee trade pre-clearance logs, corporate event calendars, sensitive data access records, and unusual options volume alerts to generate a prioritized investigation case list for the compliance team.",
+    "TASK_FOLDER": "insider_trading_case_list"
+  },
+  {
+    "TOPIC": "Forecast hotel room demand by merging competitor rate feeds, local event calendars, flight arrival passenger volumes, and current property occupancy to recommend daily rate adjustments per room type.",
+    "TASK_FOLDER": "hotel_demand_rate_recommendation"
+  },
+  {
+    "TOPIC": "Plan electric vehicle long-haul routes by factoring in vehicle battery state-of-charge telemetry, charging station real-time occupancy, driver hours-of-service limits, and delivery deadline windows to output a turn-by-turn charge-stop schedule per truck.",
+    "TASK_FOLDER": "ev_longhaul_charge_schedule"
+  },
+  {
+    "TOPIC": "Triage open-source dependency risks by scanning dependabot alerts, checking production deployment manifests, pulling exploit maturity scores from threat intelligence, and looking up service ownership to assign prioritised remediation tickets with SLA deadlines.",
+    "TASK_FOLDER": "dependency_risk_triage_tickets"
+  },
+  {
+    "TOPIC": "Audit code review coverage across repositories by analysing pull request diffs, reviewer comment density, static analysis violation counts, and historical defect escape rates to flag releases with insufficient review and issue go/no-go reports.",
+    "TASK_FOLDER": "code_review_coverage_audit"
+  },
+  {
+    "TOPIC": "Reconcile multi-cloud infrastructure spend by joining daily billing exports, resource tag compliance reports, reserved-instance utilisation logs, and cost-centre budget tables to produce a per-department showback and chargeback report.",
+    "TASK_FOLDER": "cloud_cost_department_chargeback"
+  },
+  {
+    "TOPIC": "Identify user-journey conversion bottlenecks by replaying session error logs, aggregating rage-click heatmaps, measuring funnel step abandonment rates, and correlating A/B test variant assignments to build a prioritised UX fix backlog per page.",
+    "TASK_FOLDER": "ux_conversion_fix_backlog"
+  },
+  {
+    "TOPIC": "Route LLM inference requests cost-effectively by watching real-time API latency percentiles, comparing per-million-token prices, enforcing prompt-length thresholds, and tracking SLA violation incidents to update dynamic routing rules per model tier.",
+    "TASK_FOLDER": "llm_inference_routing_update"
+  },
+  {
+    "TOPIC": "Monitor brand reputation by scanning news headlines, measuring social media volume anomalies, categorising support ticket sentiment, and tracking executive communications to generate a prioritised alert queue for the communications team.",
+    "TASK_FOLDER": "brand_reputation_alert_queue"
+  },
+  {
+    "TOPIC": "Screen new customer registrations against sanctions lists by checking identity attributes against OFAC, EU, and UN consolidated records, tracing cross-border payment intermediaries, and reviewing ultimate-beneficial-ownership structures to flag positive matches for compliance review.",
+    "TASK_FOLDER": "sanctions_screening_review_queue"
+  },
+  {
+    "TOPIC": "Detect food safety issues in cold-chain shipments by monitoring IoT temperature excursions, tracing lot-level ingredient genealogy, reviewing third-party sanitation audit violations, and analysing consumer complaint symptom frequencies to flag lot codes for immediate product hold.",
+    "TASK_FOLDER": "food_safety_lot_hold_flagging"
+  }
+]

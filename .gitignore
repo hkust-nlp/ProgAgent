@@ -1,0 +1,74 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+.Python
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+*.so
+
+# Tests and development caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Local configuration (keep example environment files)
+.env
+.env.*
+!.env.example
+!.env.*.example
+.agent/
+.agents/
+.claude/
+.codex/
+.aws/
+.idea/
+.vscode/
+.history/
+
+# Training outputs and downloaded data
+/data/
+/dataset/
+/downloads/
+checkpoints/
+outputs/
+wandb/
+logs/
+log/
+*.log
+/logs-acp-*.txt
+wget-log*
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.parquet
+*.tar.gz
+
+# TaskSync runtime artifacts; keep environment source files
+/task-sync/eval_results/
+/task-sync/environments/**/data.db
+/task-sync/environments/**/data.db-*
+/task-sync/environments/**/workspace/
+
+# Editor and OS temporary files
+.DS_Store
+*.swp
+*.swo
+*~

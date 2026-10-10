@@ -1,0 +1,27 @@
+You are tasked with producing a comprehensive streetlight maintenance budget allocation plan for a municipal government. The city manages streetlights across multiple zones, each with different failure histories, energy profiles, citizen satisfaction levels, and traffic safety records. Your goal is to compute a composite risk score for every zone, rank them, allocate budget proportionally, and produce a prioritized repair schedule.
+
+Begin by reading the configuration files available to you. One file in YAML format contains the scoring weights: a failure rate weight, a complaint density weight, an accident risk weight, an energy efficiency weight, and an infrastructure age weight. These five weights must sum to 1.0 and determine how heavily each factor contributes to a zone's composite risk score. The same file also defines severity multipliers for work order severity levels, accident severity scores for each accident category, and a lighting-related bonus value applied per lighting-related accident. A second file in JSON format specifies the total annual budget, the emergency reserve percentage, the minimum and maximum zone allocation percentages, tier definitions with risk-score thresholds and response-day targets, a cost escalation factor, and a preventive maintenance percentage. A third JSON file provides scoring parameters: the normalization method, the reference year range for counting work orders and accidents, the reference date for computing infrastructure age, the energy lookback period in months with its end boundary, and the decimal precision for composite scores and budget figures. A policy document in Markdown describes the calculation methodology in detail.
+
+Once you have absorbed these parameters, retrieve the full list of zones and their basic attributes including population, area in square kilometers, number of streetlights, and current annual budget. For each zone, gather the information needed to compute five component scores.
+
+The failure rate for a zone is the count of work orders with severity High or Critical reported within the reference year range, divided by the zone's total number of streetlights, multiplied by 100, and capped at 100. Normalize the raw failure rates across all zones by dividing each zone's value by the maximum and scaling to 0 through 100.
+
+Complaint density is the total number of unresolved citizen complaints in a zone divided by the zone's area in square kilometers, then normalized to 0 through 100 by max-scaling across all zones.
+
+The accident risk score for a zone sums the accident severity scores for every lighting-related accident within the reference year range, adding the lighting-related bonus for each such accident. Normalize across zones by max-scaling to 0 through 100.
+
+Energy efficiency deviation is computed from the most recent data available for each zone across 2024 and 2025. Calculate each zone's average monthly energy cost, divide by its number of streetlights to get a per-light figure, and normalize by max-scaling to 0 through 100 so the most expensive zone scores 100.
+
+The infrastructure age score is the mean age in years of all streetlights in a zone, measured from their install dates to the reference date. Normalize by max-scaling to 0 through 100.
+
+Multiply each component score by its corresponding weight and sum to get the composite risk score for a zone, rounded to the precision specified in the scoring configuration.
+
+Assign each zone a tier based on the composite risk score: critical if the score meets or exceeds the critical threshold, high if it meets or exceeds the high threshold, medium if it meets or exceeds the medium threshold, and low otherwise, using the thresholds from the budget rules.
+
+Allocate the distributable budget, which is the total annual budget minus the emergency reserve percentage, proportionally to each zone's composite risk score. If a zone's proportional share falls below the minimum allocation percentage, set it to the minimum; if above the maximum, cap it at the maximum. Redistribute any surplus from capped or floored zones among the remaining uncapped zones proportionally, iterating until all allocations fall within bounds.
+
+Save a file named `budget_proposal.csv` containing one row per zone sorted by composite risk score descending with exactly these columns: `zone_name`, `composite_risk_score`, `tier`, `allocated_budget`, `allocation_pct`. The allocation percentage is the zone's allocated budget divided by the total distributable budget, expressed as a percentage rounded to two decimal places.
+
+Separately, construct a prioritized repair schedule from all pending and in-progress work orders across every zone. Sort these work orders first by the zone's composite risk score descending, then within the same zone by severity in the order Critical, High, Medium, Low, and finally by date reported ascending so the oldest issues are addressed first. Save this schedule as `repair_schedule.csv` with at minimum these columns: `order_id`, `zone_name`, `severity`, `date_reported`, `repair_cost`, `tier`, `response_days`. The response days value comes from the tier definition matching the zone's assigned tier.
+
+In your final response, present the complete zone risk ranking from highest composite risk score to lowest. For each zone, state its name, composite risk score to two decimal places, tier, and allocated budget. Also report the total budget, emergency reserve, and distributable budget figures, along with the total count of scheduled work orders.
